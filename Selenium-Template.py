@@ -33,8 +33,8 @@ for option in options:
     
 driver = webdriver.Chrome(options = chrome_options)
 
-driver.get('http://github.com')
+driver.get('https://iranicard.ir/')
 print(driver.title)
 with open('./GitHub_Action_Results.txt', 'w') as f:
-    f.write(f"Hello there {driver.title}")
+    f.write(f"Salam {driver.title}")
 
