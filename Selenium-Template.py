@@ -9,6 +9,13 @@ from pyvirtualdisplay import Display
 import logging
 import time
 
+
+
+logging.basicConfig(
+    filename='app.log',              # Specify the log file where logs will be stored
+    level=logging.DEBUG,             # Set the logging level (DEBUG, INFO, WARNING, ERROR, CRITICAL)
+    format='%(asctime)s - %(levelname)s - %(message)s',  # Log message format
+)
 display = Display(visible=0, size=(800, 800))  
 display.start()
 
