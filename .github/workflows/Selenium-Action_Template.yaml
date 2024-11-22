@@ -27,7 +27,7 @@ jobs:
         
       - name: Commit and Push The Results From Python Selenium Action
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Access token from GitHub secrets
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}  # Access token from GitHub secrets
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
