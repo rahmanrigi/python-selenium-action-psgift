@@ -123,6 +123,11 @@ try:
         time.sleep(1)
         products_brand_dropdown.click()
 
+except Exception as e:
+    with open('./GitHub_Action_Results.txt', 'w') as f:
+        f.write(f"Salam {e}")
+
+
 
     # pprint.pprint(all_products)
 
@@ -148,6 +153,6 @@ finally:
     driver.quit()
 
 # print(driver.title)
-with open('./GitHub_Action_Results.txt', 'w') as f:
-    f.write(f"Salam {len(all_products)}")
+# with open('./GitHub_Action_Results.txt', 'w') as f:
+#     f.write(f"Salam {len(all_products)}")
 
