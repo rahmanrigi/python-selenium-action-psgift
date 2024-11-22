@@ -124,6 +124,7 @@ try:
         products_brand_dropdown.click()
 
 except Exception as e:
+    logging.info(f"expetion:{e}")
     with open('./GitHub_Action_Results.txt', 'w') as f:
         f.write(f"Salam {e}")
 
