@@ -1,0 +1,66 @@
+2024-11-22 14:22:45,347 - DEBUG - command: ['Xvfb', '-br', '-nolisten', 'tcp', '-screen', '0', '800x800x24', '-displayfd', '5']
+2024-11-22 14:22:47,441 - DEBUG - set $DISPLAY=:0
+2024-11-22 14:22:49,293 - INFO - Downloading chromedriver (131.0.6778.85)...
+2024-11-22 14:22:49,517 - DEBUG - Selenium Manager binary found at: /opt/hostedtoolcache/Python/3.9.20/x64/lib/python3.9/site-packages/selenium/webdriver/common/linux/selenium-manager
+2024-11-22 14:22:49,517 - DEBUG - Executing process: /opt/hostedtoolcache/Python/3.9.20/x64/lib/python3.9/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --language-binding python --output json
+2024-11-22 14:22:49,625 - DEBUG - Sending stats to Plausible: Props { browser: "chrome", browser_version: "", os: "linux", arch: "x86_64", lang: "python", selenium_version: "4.26" }
+2024-11-22 14:22:49,625 - DEBUG - Found chromedriver 131.0.6778.85 in PATH: /opt/hostedtoolcache/Python/3.9.20/x64/lib/python3.9/site-packages/chromedriver_autoinstaller/131/chromedriver
+2024-11-22 14:22:49,625 - DEBUG - Found chromium-browser in PATH: /usr/bin/chromium-browser
+2024-11-22 14:22:49,625 - DEBUG - Running command: /usr/bin/chromium-browser --version
+2024-11-22 14:22:49,625 - DEBUG - Output: "Chromium 131.0.6778.0 "
+2024-11-22 14:22:49,625 - DEBUG - Detected browser: chrome 131.0.6778.0
+2024-11-22 14:22:49,625 - DEBUG - Discovering versions from https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json
+2024-11-22 14:22:49,625 - DEBUG - Required driver: chromedriver 131.0.6778.85
+2024-11-22 14:22:49,625 - DEBUG - Driver path: /opt/hostedtoolcache/Python/3.9.20/x64/lib/python3.9/site-packages/chromedriver_autoinstaller/131/chromedriver
+2024-11-22 14:22:49,625 - DEBUG - Browser path: /usr/bin/chromium-browser
+2024-11-22 14:22:49,628 - DEBUG - Started executable: `/opt/hostedtoolcache/Python/3.9.20/x64/lib/python3.9/site-packages/chromedriver_autoinstaller/131/chromedriver` in a child process with pid: 2101 using 0 to output -3
+2024-11-22 14:22:49,640 - DEBUG - POST http://localhost:56395/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'browserVersion': None, 'goog:chromeOptions': {'extensions': [], 'binary': '/usr/bin/chromium-browser', 'args': ['--window-size=1200,1200', '--ignore-certificate-errors']}}}}
+2024-11-22 14:22:49,641 - DEBUG - Starting new HTTP connection (1): localhost:56395
+2024-11-22 14:22:58,339 - DEBUG - http://localhost:56395 "POST /session HTTP/11" 200 0
+2024-11-22 14:22:58,339 - DEBUG - Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"131.0.6778.0","chrome":{"chromedriverVersion":"131.0.6778.85 (3d81e41b6f3ac8bcae63b32e8145c9eb0cd60a2d-refs/branch-heads/6778@{#2285})","userDataDir":"/tmp/.org.chromium.Chromium.zVZGHT"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:41327"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"732a2c2adb4c6eff5057faabefdb3eb4"}} | headers=HTTPHeaderDict({'Content-Length': '847', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-22 14:22:58,339 - DEBUG - Finished Request
+2024-11-22 14:22:58,339 - DEBUG - POST http://localhost:56395/session/732a2c2adb4c6eff5057faabefdb3eb4/url {'url': 'https://iranicard.ir/'}
+2024-11-22 14:23:06,446 - DEBUG - http://localhost:56395 "POST /session/732a2c2adb4c6eff5057faabefdb3eb4/url HTTP/11" 200 0
+2024-11-22 14:23:06,446 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-22 14:23:06,447 - DEBUG - Finished Request
+2024-11-22 14:23:06,447 - INFO - Scraping started...
+2024-11-22 14:23:06,447 - DEBUG - POST http://localhost:56395/session/732a2c2adb4c6eff5057faabefdb3eb4/url {'url': 'https://www.iranicard.ir/card/giftcard/'}
+2024-11-22 14:23:07,751 - DEBUG - http://localhost:56395 "POST /session/732a2c2adb4c6eff5057faabefdb3eb4/url HTTP/11" 200 0
+2024-11-22 14:23:07,751 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-22 14:23:07,751 - DEBUG - Finished Request
+2024-11-22 14:23:07,751 - DEBUG - POST http://localhost:56395/session/732a2c2adb4c6eff5057faabefdb3eb4/element {'using': 'xpath', 'value': "//*[@id='block-card-block_9ea71d6d4ffff7e694494e8f3cf11fda']/div/div/div/div/div[1]/div/div/a"}
+2024-11-22 14:23:07,765 - DEBUG - http://localhost:56395 "POST /session/732a2c2adb4c6eff5057faabefdb3eb4/element HTTP/11" 200 0
+2024-11-22 14:23:07,765 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.663CFC6E44B8F44EC273A9F8CDAE5AE5.d.DA7F4FFCF9AB43A7B00D038F40CC42A4.e.134"}} | headers=HTTPHeaderDict({'Content-Length': '127', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-22 14:23:07,765 - DEBUG - Finished Request
+2024-11-22 14:23:07,765 - DEBUG - POST http://localhost:56395/session/732a2c2adb4c6eff5057faabefdb3eb4/element/f.663CFC6E44B8F44EC273A9F8CDAE5AE5.d.DA7F4FFCF9AB43A7B00D038F40CC42A4.e.134/click {}
+2024-11-22 14:23:07,846 - DEBUG - http://localhost:56395 "POST /session/732a2c2adb4c6eff5057faabefdb3eb4/element/f.663CFC6E44B8F44EC273A9F8CDAE5AE5.d.DA7F4FFCF9AB43A7B00D038F40CC42A4.e.134/click HTTP/11" 200 0
+2024-11-22 14:23:07,846 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-22 14:23:07,846 - DEBUG - Finished Request
+2024-11-22 14:23:07,846 - DEBUG - POST http://localhost:56395/session/732a2c2adb4c6eff5057faabefdb3eb4/element {'using': 'xpath', 'value': "//*[@id='block-card-block_9ea71d6d4ffff7e694494e8f3cf11fda']/div/div/div/div/div[1]/div/div/div/ul"}
+2024-11-22 14:23:07,867 - DEBUG - http://localhost:56395 "POST /session/732a2c2adb4c6eff5057faabefdb3eb4/element HTTP/11" 200 0
+2024-11-22 14:23:07,867 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.663CFC6E44B8F44EC273A9F8CDAE5AE5.d.DA7F4FFCF9AB43A7B00D038F40CC42A4.e.136"}} | headers=HTTPHeaderDict({'Content-Length': '127', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-22 14:23:07,867 - DEBUG - Finished Request
+2024-11-22 14:23:07,867 - DEBUG - POST http://localhost:56395/session/732a2c2adb4c6eff5057faabefdb3eb4/element/f.663CFC6E44B8F44EC273A9F8CDAE5AE5.d.DA7F4FFCF9AB43A7B00D038F40CC42A4.e.136/elements {'using': 'tag name', 'value': 'li'}
+2024-11-22 14:23:07,899 - DEBUG - http://localhost:56395 "POST /session/732a2c2adb4c6eff5057faabefdb3eb4/element/f.663CFC6E44B8F44EC273A9F8CDAE5AE5.d.DA7F4FFCF9AB43A7B00D038F40CC42A4.e.136/elements HTTP/11" 200 0
+2024-11-22 14:23:07,899 - DEBUG - Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.663CFC6E44B8F44EC273A9F8CDAE5AE5.d.DA7F4FFCF9AB43A7B00D038F40CC42A4.e.137"},{"element-6066-11e4-a52e-4f735466cecf":"f.663CFC6E44B8F44EC273A9F8CDAE5AE5.d.DA7F4FFCF9AB43A7B00D038F40CC42A4.e.138"},{"element-6066-11e4-a52e-4f735466cecf":"f.663CFC6E44B8F44EC273A9F8CDAE5AE5.d.DA7F4FFCF9AB43A7B00D038F40CC42A4.e.139"}]} | headers=HTTPHeaderDict({'Content-Length': '365', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-22 14:23:07,899 - DEBUG - Finished Request
+2024-11-22 14:23:07,899 - DEBUG - GET http://localhost:56395/session/732a2c2adb4c6eff5057faabefdb3eb4/element/f.663CFC6E44B8F44EC273A9F8CDAE5AE5.d.DA7F4FFCF9AB43A7B00D038F40CC42A4.e.137/text {}
+2024-11-22 14:23:07,914 - DEBUG - http://localhost:56395 "GET /session/732a2c2adb4c6eff5057faabefdb3eb4/element/f.663CFC6E44B8F44EC273A9F8CDAE5AE5.d.DA7F4FFCF9AB43A7B00D038F40CC42A4.e.137/text HTTP/11" 200 0
+2024-11-22 14:23:07,914 - DEBUG - Remote response: status=200 | data={"value":""} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-22 14:23:07,914 - DEBUG - Finished Request
+2024-11-22 14:23:07,915 - DEBUG - GET http://localhost:56395/session/732a2c2adb4c6eff5057faabefdb3eb4/element/f.663CFC6E44B8F44EC273A9F8CDAE5AE5.d.DA7F4FFCF9AB43A7B00D038F40CC42A4.e.138/text {}
+2024-11-22 14:23:07,922 - DEBUG - http://localhost:56395 "GET /session/732a2c2adb4c6eff5057faabefdb3eb4/element/f.663CFC6E44B8F44EC273A9F8CDAE5AE5.d.DA7F4FFCF9AB43A7B00D038F40CC42A4.e.138/text HTTP/11" 200 0
+2024-11-22 14:23:07,922 - DEBUG - Remote response: status=200 | data={"value":""} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-22 14:23:07,922 - DEBUG - Finished Request
+2024-11-22 14:23:07,922 - DEBUG - GET http://localhost:56395/session/732a2c2adb4c6eff5057faabefdb3eb4/element/f.663CFC6E44B8F44EC273A9F8CDAE5AE5.d.DA7F4FFCF9AB43A7B00D038F40CC42A4.e.139/text {}
+2024-11-22 14:23:07,931 - DEBUG - http://localhost:56395 "GET /session/732a2c2adb4c6eff5057faabefdb3eb4/element/f.663CFC6E44B8F44EC273A9F8CDAE5AE5.d.DA7F4FFCF9AB43A7B00D038F40CC42A4.e.139/text HTTP/11" 200 0
+2024-11-22 14:23:07,931 - DEBUG - Remote response: status=200 | data={"value":""} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-22 14:23:07,931 - DEBUG - Finished Request
+2024-11-22 14:23:07,932 - DEBUG - GET http://localhost:56395/session/732a2c2adb4c6eff5057faabefdb3eb4/title {}
+2024-11-22 14:23:07,935 - DEBUG - http://localhost:56395 "GET /session/732a2c2adb4c6eff5057faabefdb3eb4/title HTTP/11" 200 0
+2024-11-22 14:23:07,935 - DEBUG - Remote response: status=200 | data={"value":"خرید گیفت کارت - معتبرترین سایت خرید گیفت کارت - ایرانیکارت"} | headers=HTTPHeaderDict({'Content-Length': '118', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-22 14:23:07,935 - DEBUG - Finished Request
+2024-11-22 14:23:07,936 - DEBUG - DELETE http://localhost:56395/session/732a2c2adb4c6eff5057faabefdb3eb4 {}
+2024-11-22 14:23:07,987 - DEBUG - http://localhost:56395 "DELETE /session/732a2c2adb4c6eff5057faabefdb3eb4 HTTP/11" 200 0
+2024-11-22 14:23:07,987 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-22 14:23:07,987 - DEBUG - Finished Request
