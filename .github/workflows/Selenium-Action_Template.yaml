@@ -26,9 +26,11 @@ jobs:
         run: python Selenium-Template.py
         
       - name: Commit and Push The Results From Python Selenium Action
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-         git config --global user.name "github-actions[bot]"
-         git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-         git add -A
-         git commit -m "GitHub Actions Results added"
-         git push
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "GitHub Actions Results added" || echo "No changes to commit"
+          git push
